@@ -14,7 +14,7 @@ body{
     background-color: var(--violet);
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1024px){
     body{
         font-size: 1.3rem;
     }
@@ -28,7 +28,7 @@ h1{
     margin-bottom: 0;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1024px){
     h1{
         font-size: 2.4rem;
     }
@@ -48,7 +48,7 @@ p{
     padding-right: 30px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1024px){
     .huddle-container{
         background-image: url(images/bg-desktop.svg);
         padding-bottom: 30px;
@@ -76,7 +76,7 @@ p{
     text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .huddle-container-middle{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -88,7 +88,7 @@ p{
     margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1024px){
     .huddle-hero__image{
         margin-bottom: 0;
     }
@@ -98,7 +98,7 @@ p{
     width: 80vw;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1024px){
     .hero{
         width: 50vw;
     }
@@ -128,6 +128,13 @@ p{
     border-color: transparent;
     border-radius: 25px;
     color: var(--violet);
+    transition: all 0.25s ease-out;
+}
+
+.btn__register:hover{
+    cursor: pointer;
+    background-color: var(--soft-magenta);
+    color: #fff;
 }
 
 /* Bottom */
@@ -138,12 +145,19 @@ p{
     margin-top: 70px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1024px){
     .huddle-container-bottom{
         text-align: right;
     }
 }
 
 .fa-brands{
-    width: 25px;
+    width: 40px;
+    transition: color 0.25s ease-in-out, width 0.25s;
+}
+
+.fa-brands:hover{
+    cursor: pointer;
+    color: var(--soft-magenta);
+    width: 45px;
 }
