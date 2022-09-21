@@ -1,0 +1,149 @@
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    --font-size: 1.5rem;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: var(--font-size);
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--violet);
+}
+
+@media screen and (min-width: 768px){
+    body{
+        font-size: 1.3rem;
+    }
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    line-height: 40px;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px){
+    h1{
+        font-size: 2.4rem;
+    }
+}
+
+p{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.huddle-container{
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media screen and (min-width: 768px){
+    .huddle-container{
+        background-image: url(images/bg-desktop.svg);
+        padding-bottom: 30px;
+    }
+}
+
+/* top */
+
+.huddle-container-top{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.logo{
+    height: 30px;
+}
+
+/* middle */
+
+.huddle-container-middle{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .huddle-container-middle{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+    }
+}
+
+.huddle-hero__image{
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px){
+    .huddle-hero__image{
+        margin-bottom: 0;
+    }
+}
+
+.hero{
+    width: 80vw;
+}
+
+@media screen and (min-width: 768px){
+    .hero{
+        width: 50vw;
+    }
+}
+
+.huddle-hero__description{
+    line-height: 25px;
+}
+
+@media screen and (min-width: 1024px){
+    .huddle-hero__description{
+        text-align: start;
+    }
+
+    .main__heading{
+        width: 320px;
+    }
+
+    .para-desc{
+        width: 370px;
+    }
+}
+
+.btn__register{
+    padding: 10px 55px;
+    outline: 0;
+    border-color: transparent;
+    border-radius: 25px;
+    color: var(--violet);
+}
+
+/* Bottom */
+
+.huddle-container-bottom{
+    color: #fff;
+    text-align: center;
+    margin-top: 70px;
+}
+
+@media screen and (min-width: 768px){
+    .huddle-container-bottom{
+        text-align: right;
+    }
+}
+
+.fa-brands{
+    width: 25px;
+}
